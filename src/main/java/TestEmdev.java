@@ -74,7 +74,7 @@ public class TestEmdev {
                         .forEach((k, v) -> bufMap.merge(k, v, (a, b) -> a + b));
             }
 
-            // Отсортируем сначало по количеству вхождений, потом по алфавиту
+            // Отсортируем сначала по количеству вхождений, потом по алфавиту
             final Map<String, Long> sortedMap = new TreeMap<>(new Comparator<String>() {
                 @Override
                 public int compare(String x, String y) {
