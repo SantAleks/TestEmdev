@@ -16,7 +16,7 @@
 
 <b>Результат разработки:</b>
 
-Архив с дистрибутивом находится по адресу https://github.com/SantAleks/TestEmdev/blob/master/TestEmdev.7z
+Архив с дистрибутивом находится по адресу https://github.com/SantAleks/TestEmdev/blob/master/TestEmdev.7z, а исходный код - https://github.com/SantAleks/TestEmdev/tree/master/src/main/java
 Для запуска необходимо:
 1) распаковать архив;
 2) запустить сервис файлом TestEmdev.bat.
