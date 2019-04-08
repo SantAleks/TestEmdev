@@ -48,7 +48,7 @@ public class CountLetter {
             while (scannerIn.hasNextLine()) {
                 // Вырежем все небуквенные символы
                 String sRead[] = scannerIn.nextLine().replaceAll("[^\\pL]", "").split("");
-                // Игнорируем пустые строки
+                // игнорируем пустые строки
                 if (sRead.length == 1 && sRead[0].length() == 0) continue;
 
                 // Сгруппируем и добавим результат в буферный словарь
