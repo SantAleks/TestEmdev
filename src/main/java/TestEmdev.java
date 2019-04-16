@@ -13,8 +13,9 @@ public class TestEmdev {
         Path path = Paths.get(userDir,"input.txt");
         CountLetter countLetter = new CountLetter(stCharset);
         Map<String, Long> sortedMap  = countLetter.countLetter(path);
-        sortedMap.forEach((k,v)->System.out.println(k + " : "+ v));
-
+        if (sortedMap != null) {
+            sortedMap.forEach((k, v) -> System.out.println(k + " : " + v));
+        }
         // Организуем регулярный запуск задачи мониторинга файлов раз в 10 сек
         System.out.println("TimerTask is begin work");
         Timer timer = new Timer();

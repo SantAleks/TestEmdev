@@ -28,9 +28,11 @@ public class CountLetter {
                     ) {
                         System.out.println("Update file: " + child.getFileName());
                         Map<String, Long> sortedInMap  = countLetter(child);
-                        List<String> listFile = new ArrayList<>();
-                        sortedInMap.forEach((k,v)->listFile.add(k + " : "+ v));
-                        Files.write(outPath, listFile, StandardCharsets.UTF_8);
+                        if (sortedInMap != null) {
+                            List<String> listFile = new ArrayList<>();
+                            sortedInMap.forEach((k, v) -> listFile.add(k + " : " + v));
+                            Files.write(outPath, listFile, StandardCharsets.UTF_8);
+                        }
                     }
                 }
             }
@@ -67,6 +69,7 @@ public class CountLetter {
             sortedMap.putAll(bufMap);
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println("Отстутствует файл");
         }
         return sortedMap;
     }
